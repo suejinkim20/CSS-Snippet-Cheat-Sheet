@@ -4,14 +4,13 @@
 
 
 :root {
-    --background-color: #EDC7b7;
-    --code-box-color: #f5d2c3;
-    --header-color: #0a2d52;
-    --text-color: #25486e;
-    --border-color: #794d5c;
+    --background-color: #69b3bd;
+    --code-box-color: linear-gradient(to right, #b4dfe5, #d2fdff);
+    --header-color: #29648a;
+    --text-color: #29648a;
+    --border-color: #29648a;
 
 }
-
 
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,26 +21,35 @@ body {
 }
 
 
-
 header {
     border: var(--border-color) solid 3px;
-    background-color: var(--code-box-color);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
     border-radius: 10px;
+    margin: 30px;
 }
 
+header p {
+    margin: 30px;
+    border: var(--border-color) solid 1px;
+    padding: 20px;
+}
 
 h1 {
     color: var(--header-color);
-    margin: 20px;
-}
+    margin: 30px;
+    letter-spacing: 3px;
+    font-size: 50px;
+    }
 
 h2 {
     border: var(--border-color) solid 2px;
     position: relative;
     margin-top: -20px;
     z-index: 1;
-    background-color: var(--code-box-color);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
     border-radius: 5px;
+    padding: 10px;
+    color: #29648a;
 }
 
 
@@ -55,9 +63,21 @@ main {
     flex: 300px;
     padding: 10px;
     text-align: center;
-    background-color: var(--code-box-color);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
     border: var(--border-color) solid 3px;
     margin: 15px;
     border-radius: 5px;
+}
+
+.code-block {
+    border: var(--border-color) solid 1px;
+    text-align: left;
+    font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console',
+    'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
+    'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
+    monospace;
+    padding: 20px;
+    margin: 30px;
+    white-space: pre-wrap;
 }
 
