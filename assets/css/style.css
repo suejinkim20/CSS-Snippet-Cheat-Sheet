@@ -4,11 +4,11 @@
 
 
 :root {
-    --background-color: #69b3bd;
+    --background-color: white;
     --code-box-color: linear-gradient(to right, #b4dfe5, #d2fdff);
-    --header-color: #29648a;
-    --text-color: #29648a;
-    --border-color: #29648a;
+    --header-color: black;
+    --text-color: black;
+    --border-color: grey;
 
 }
 
@@ -23,7 +23,7 @@ body {
 
 header {
     border: var(--border-color) solid 3px;
-    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff, #5accdb);
     border-radius: 10px;
     margin: 30px;
 }
@@ -46,10 +46,10 @@ h2 {
     position: relative;
     margin-top: -20px;
     z-index: 1;
-    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
+    background-image: linear-gradient(to bottom , #5accdb, #d2fdff, #5accdb);
     border-radius: 5px;
     padding: 10px;
-    color: #29648a;
+    color: black;
 }
 
 
@@ -63,7 +63,7 @@ main {
     flex: 300px;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff);
+    background-image: linear-gradient(to bottom, #5accdb, #d2fdff, #5accdb);
     border: var(--border-color) solid 3px;
     margin: 15px;
     border-radius: 5px;
