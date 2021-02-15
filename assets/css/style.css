@@ -1,10 +1,12 @@
 * {
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
 }
 
 
 :root {
-    --background-color: white;
+    --background-color: #5accdb41;
     --code-box-color: linear-gradient(to right, #b4dfe5, #d2fdff);
     --header-color: black;
     --text-color: black;
@@ -39,17 +41,19 @@ h1 {
     margin: 30px;
     letter-spacing: 3px;
     font-size: 50px;
+    overflow-wrap: break-word;
     }
 
 h2 {
     border: var(--border-color) solid 2px;
     position: relative;
-    margin-top: -20px;
+    margin-top: -30px;
     z-index: 1;
-    background-image: linear-gradient(to bottom , #5accdb, #d2fdff, #5accdb);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff, #5accdb);
     border-radius: 5px;
     padding: 10px;
     color: black;
+    overflow-wrap: break-word;
 }
 
 
@@ -63,7 +67,7 @@ main {
     flex: 300px;
     padding: 10px;
     text-align: center;
-    background-image: linear-gradient(to bottom, #5accdb, #d2fdff, #5accdb);
+    background-image: linear-gradient(to bottom right, #5accdb, #d2fdff, #5accdb);
     border: var(--border-color) solid 3px;
     margin: 15px;
     border-radius: 5px;
@@ -81,3 +85,7 @@ main {
     white-space: pre-wrap;
 }
 
+@media screen and (max-width: 550px) {
+    header {
+        width: auto;
+    }
